@@ -595,31 +595,39 @@
     "__type__": "e0eab9ctINP0qzQA29s1h+E",
     "_name": "",
     "_objFlags": 0,
+    "__editorExtras__": {},
     "node": {
       "__id__": 2
     },
     "_enabled": true,
     "__prefab": null,
     "triggerType_e": "OnStart",
-    "triggerEvent": "None",
-    "一次性事件": true,
-    "taskDoneEmitEvent": "转动完成",
+    "延迟执行时间": 2,
+    "triggerEvents": [
+      "点击开始按钮"
+    ],
+    "重复任务": true,
+    "taskDoneEmitEvent": "点击开始按钮",
     "_id": "11FUtii29A36yjTXBKj7vi"
   },
   {
     "__type__": "fc4e8MZYxNDLqv9Gmb+McPq",
     "_name": "",
     "_objFlags": 0,
+    "__editorExtras__": {},
     "node": {
       "__id__": 2
     },
     "_enabled": true,
     "__prefab": null,
     "triggerType_e": "WaitEvent",
-    "triggerEvent": "转动完成",
-    "一次性事件": true,
-    "taskDoneEmitEvent": "None",
-    "_id": "79TZUN4oNCK7i0zgKB+RAm"
+    "延迟执行时间": 0,
+    "triggerEvents": [
+      "点击开始按钮"
+    ],
+    "重复任务": true,
+    "taskDoneEmitEvent": "转动完成",
+    "_id": "3c1b18h/VMB4UIsdfcZEBC"
   },
   {
     "__type__": "cc.SceneGlobals",
