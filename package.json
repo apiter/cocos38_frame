@@ -3,5 +3,13 @@
   "uuid": "e92a3f60-f88a-4868-aa28-bb2c41ca8a09",
   "creator": {
     "version": "3.8.5"
+  },
+  "scripts": {
+    "build-proto:pbjs": "npx pbjs -t static-module -w commonjs ./proto/*.proto -o ./assets/test/protobuf/proto.js",
+    "build-proto:pbts": "npx pbts ./assets/test/protobuf/proto.js -o ./assets/test/protobuf/proto.d.ts"
+  },
+  "dependencies": {
+    "protobufjs": "^7.4.0",
+    "protobufjs-cli": "^1.1.3"
   }
 }

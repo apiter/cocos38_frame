@@ -1,0 +1,24 @@
+package proto;
+syntax = "proto3";
+message Login {
+    int32 u_id = 1;
+}
+
+message Start {
+    int32 u_id = 1;
+    string username = 2;
+}
+
+message BaseMessage {
+    enum MessageType {
+        UNKNOWN = 0;
+        LOGIN = 1;
+        START = 2;
+    }
+
+    MessageType type = 1;
+    oneof payload {
+        Login login = 2;
+        Start start = 3;
+    }
+}
